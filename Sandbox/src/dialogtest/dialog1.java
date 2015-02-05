@@ -19,13 +19,13 @@ public class dialog1 extends JFrame{
 		super("The title");
 		setLayout(new FlowLayout());
 		
-		item1 = new JTextField(10);
+		item1 = new JTextField(20);
 		add(item1);
 		
-		item2 = new JTextField(10);
+		item2 = new JTextField(20);
 		add(item2);
 		
-		item3 = new JTextField(10);
+		item3 = new JTextField(20);
 		add(item3);
 		
 		passwordField = new JPasswordField(10);
