@@ -8,7 +8,7 @@ public class showdialog1 {
 		// TODO Auto-generated method stub
 		dialog1 thisdialog = new dialog1();
 		thisdialog.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		thisdialog.setSize(260,220);
+		thisdialog.setSize(260,300);
 		thisdialog.setVisible(true);
 		// adding some new comments
 	}
