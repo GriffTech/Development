@@ -2,19 +2,14 @@ package dialogtest;
 
 
 import java.awt.FlowLayout;
+//import java.awt.Image;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-import javax.swing.DefaultListModel;
-import javax.swing.JFrame;
-import javax.swing.JTextField;
-import javax.swing.JPasswordField;
-import javax.swing.JOptionPane;
-import javax.swing.JCheckBox;
-import javax.swing.JList;
-import javax.swing.JButton;
+//import java.awt.*;
+import javax.swing.*;
 
-
+//public class dialog1 extends JApplet{
 public class dialog1 extends JFrame{
 	private JTextField item1;
 	private JTextField item2;
@@ -26,6 +21,11 @@ public class dialog1 extends JFrame{
 	private JButton button2;
 	
 	private DefaultListModel model;
+	
+	//Image img;
+	//ImageIcon ic;
+	//JLabel label;
+	
 	
 	public dialog1() {
 		
@@ -46,13 +46,11 @@ public class dialog1 extends JFrame{
 		passwordField = new JPasswordField(10);
 		add(passwordField);	
 		
+		// CheckBox
 		boxField = new JCheckBox("Yes?",true);
 		add(boxField);	
 		
-		
-		
-		
-		
+		// List
 		model = new DefaultListModel();
 		listBox = new JList(model);
 		model.add(0, "Item1");
@@ -60,14 +58,16 @@ public class dialog1 extends JFrame{
 		model.add(2, "Item3");
 		model.add(3, "Item3");
 		add(listBox);
-		
 
-		
+		// Buttons
 		button1 = new JButton("OK");
 		add(button1);
 		button2 = new JButton("Cancel");
 		add(button2);
 		
+		//img = getImage(getCodeBase(),"afraid.gif");
+		//ic = new ImageIcon(img);
+		//label = new JLabel(ic);
 		
 		
 	}
