@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.jws.WebService;
 
+
 @WebService
 public class ProductCatalog {
 
