@@ -18,9 +18,13 @@ public class ProductCatalog {
 	public List<String> getProductCategories() {
 		return productService.getProductCategories();
 	}
-	
+	@WebMethod
 	public List<String> getProducts(String category) {
 		return productService.getProducts(category);
+	}
+	@WebMethod
+	public boolean addProduct(String category, String product) {
+		return productService.addProduct(category, product);
 	}
 	
 }

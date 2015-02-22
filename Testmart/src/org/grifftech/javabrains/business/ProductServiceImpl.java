@@ -13,16 +13,14 @@ public class ProductServiceImpl {
 		bookList.add("Inferno");
 		bookList.add("Joyland");
 		bookList.add("The Game of Thrones");
-		
 		musicList.add("Random Access Memories");
 		musicList.add("Night Visions");
 		musicList.add("Unorthodox Jukebox");
-		
 		movieList.add("The Wizard of Oz");
 		movieList.add("Despicable Me");
 		movieList.add("Star Trek - Into Darkness");
-		
 	}
+	
 
 	public List<String> getProductCategories() {
 		List<String> categories = new ArrayList<>();
@@ -31,6 +29,7 @@ public class ProductServiceImpl {
 		categories.add("Movies");
 		return categories;
 	}
+	
 	
 	public List<String> getProducts(String category) {
 		switch (category.toLowerCase()) {
@@ -41,8 +40,25 @@ public class ProductServiceImpl {
 		case "movies":
 			return movieList;
 		}
-		return null;
-		
-		}
+		return null;	
 	}
 	
+	
+	public boolean addProduct(String category, String product) {
+		switch (category.toLowerCase()) {
+		case "books":
+			bookList.add(product);
+			break;
+		case "music":
+			musicList.add(product);
+			break;
+		case "movies":
+			movieList.add(product);
+			break;
+		default:
+			return false;
+		}
+		return true;
+	}
+	
+}
