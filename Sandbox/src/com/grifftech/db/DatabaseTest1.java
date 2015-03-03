@@ -26,7 +26,7 @@ public class DatabaseTest1 {
 	      Connection conn = null;
 	      conn = DriverManager.getConnection("jdbc:sqlite:test.db");
 	      //conn = DriverManager.getConnection("jdbc:sqlite:C:\\RPGDATA1\\Dev-Dev\\Perl\\mm_playlists\\Copy of MM.DB");
-	      
+	        
 
 	      //conn = DriverManager.getConnection("jdbc:sqlite:D:\\testdb.db");
 	      System.out.println("Opened database successfully");
