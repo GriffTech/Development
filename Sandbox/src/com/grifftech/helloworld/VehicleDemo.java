@@ -7,6 +7,11 @@ class Vehicle {
 	String engine;
 	String body;
 	int doors;
+	
+	String description(){
+		//System.out.println(make + " " + model + " " + body + " " +engine);
+		return make + " " + model + " " + body + " " +engine;
+	}
 }
 
 public class VehicleDemo {
@@ -24,14 +29,9 @@ public class VehicleDemo {
 		suescar.model = "Astra";
 		suescar.body = "Tourer";
 		suescar.engine = "1.6";
+		
+		//String desc = suescar.description();
+		System.out.println("Description: "+suescar.description());
+		System.out.println("Description: "+russcar.description());	
 	}
-	
-
-	
-
-	
-
-	
-
-
 }

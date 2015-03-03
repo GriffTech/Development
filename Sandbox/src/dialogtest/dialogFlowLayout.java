@@ -10,7 +10,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.*;
 
 //public class dialog1 extends JApplet{
-public class dialog1 extends JFrame{
+public class dialogFlowLayout extends JFrame{
 	private JTextField item1;
 	private JTextField item2;
 	private JTextField item3;
@@ -27,11 +27,11 @@ public class dialog1 extends JFrame{
 	//JLabel label;
 	
 	
-	public dialog1() {
+	public dialogFlowLayout() {
 		
 
 		
-		super("The title");
+		super("Flow Layout");
 		setLayout(new FlowLayout());
 		
 		item1 = new JTextField(20);
